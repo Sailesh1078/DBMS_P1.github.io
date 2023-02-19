@@ -1,0 +1,114 @@
+div
+{
+    border-radius: 5px;
+    }
+#header {
+        background-color: #03000d;
+        padding: 15px 10px; 
+        color: white;
+        text-align: center; 
+        font-size: 20px; 
+        font-weight: bold;
+        position: fixed; 
+        top: 0;
+        width: 100%; 
+        transition: 0.2s; 
+      }
+
+a:hover {
+    font-weight: bold;
+}
+
+.right
+{
+    float: left;
+    margin-top: 50px;
+    padding-left:5px;
+    /*margin-right: -10px;
+    margin-left: 14%;*/
+    height: auto;
+    width: 99%;
+    background-color: #c4bbdf;
+    }
+
+/*.left
+{
+    float: left;
+    margin-top: 50px;
+    /*margin-right: -90px;
+    height: relative;
+    width: 10%;
+    background-color: #4160E8;
+    }*/
+    
+#footer
+{
+    height:40px;
+    clear:both;
+    position: relative;
+    }
+    
+h3
+{
+    text-decoration: underline;
+    }
+
+#job-responsibilities
+{
+    padding: 1px;
+    }
+.job-title
+{
+    font-weight: bold;
+    }
+table
+{
+    border: 1px black;
+    }
+td
+{
+    padding: 2px;
+    border: 1px solid #E88741;
+    }
+
+#course-name
+{
+    font-weight:bold;
+    }
+
+#company-name
+{
+    height:2px;
+    text-decoration:underline;
+    }
+#job-title
+{
+    height: 5px;
+    }
+.job-duration
+{
+    float:right;
+    }
+#heading
+{
+    font-weight:bold;
+    }
+
+* {box-sizing:border-box}
+
+.container {
+  width: 100%; 
+  background-color: #ddd; 
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  color: white; 
+}
+
+.c {width: 85%; background-color:#2196F3;} 
+.net {width: 45%; background-color:  #04AA6D;}
+.js {width: 60%; background-color: #e41f11;} 
+.crytpo {width: 40%; background-color: #808080;}     

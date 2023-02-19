@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DBMS ASSIGNMENT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <script >
+      const body = document.body;
+      let lastScroll = 0;
+
+      window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+          if (currentScroll <= 0) {
+             body.classList.remove("scroll-up");
+               return;
+      }
+
+      if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+          body.classList.remove("scroll-up");
+          body.classList.add("scroll-down");
+      } else if (
+          currentScroll < lastScroll &&
+          body.classList.contains("scroll-down")
+      ) {
+          body.classList.remove("scroll-down");
+          body.classList.add("scroll-up");
+      }
+      lastScroll = currentScroll;
+      });
+    </script>  
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar">
+          <div class="Assignment">
+              <a href="index.html">HOMEPAGE For DBMS Phase-1 Assignment</a>
+          </div>
+      </div>      
+    <div class="card middle">
+      <div class="front">
+        <img src="img2.png" alt="">
+      </div>
+      <div class="back">
+        <div class="back-content middle">
+          <h2>E SAILESWARA REDDY</h2>
+          <a href ="#">Resume</a>
+          <div class="sm">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card NEXT">
+      <div class="front">
+        <img src="img2.png" alt="">
+      </div>
+      <div class="back">
+        <div class="back-content middle">
+          <h2>NITHISWARAR S P</h2>
+          <a href ="#">Resume</a>
+          <div class="sm">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card NEXT2">
+      <div class="front">
+        <img src="img.jpg" alt="">
+      </div>
+      <div class="back">
+        <div class="back-content middle">
+          <h2>ROHAN SINGH</h2>
+          <a href ="Rohan_singh.html" target="_blank">Resume</a>
+          <div class="sm">
+            <a href="https://wa.me/8865063879"><i class="fab fa-whatsapp" target="_blank"></i></a>
+            <a href="https://twitter.com/RohanSi77294816?t=TLj_slXnwS9GAlTuDCu7bg&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+            <!-- <a href="#"><i class="fab fa-linkedin"></i></a>-->
+            <a href="https://t.me/R15H1N"><i class="fab fa-telegram" target="_blank"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card NEXT3">
+      <div class="front">
+        <img src="img2.png" alt="">
+      </div>
+      <div class="back">
+        <div class="back-content middle">
+          <h2>THIRILOKKIYAN K</h2>
+          <a href ="#">Resume</a>
+          <div class="sm">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  </body>
+</html>

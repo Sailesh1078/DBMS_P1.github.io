@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style_cs21b1073.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script >
+        const body = document.body;
+        let lastScroll = 0;
+
+        window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+            if (currentScroll <= 0) {
+               body.classList.remove("scroll-up");
+                 return;
+        }
+
+        if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+            body.classList.remove("scroll-up");
+            body.classList.add("scroll-down");
+        } else if (
+            currentScroll < lastScroll &&
+            body.classList.contains("scroll-down")
+        ) {
+            body.classList.remove("scroll-down");
+            body.classList.add("scroll-up");
+        }
+        lastScroll = currentScroll;
+        });
+
+        function myFunction() {
+        var x = document.getElementById("snackbar");
+         x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
+
+        var i = 0;
+        var txt = 'ROHAN SINGH';
+        var speed = 50;
+
+        function typeWriter() {
+            if (i < txt.length) {
+               document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+             setTimeout(typeWriter, speed);
+            }   
+        }
+    </script>
+</head>
+<body background="IMG3.jpg">
+<div class="header">
+     <div class="navbar">
+         <div class="RollNo">
+             <a href="#"><P id="demo">CS21B1073</P></a>
+         </div>
+         <div class="menu">
+             <ul>
+                 <li><button class="btn" onclick="myFunction()"><a href="Rohan_singh.html">Home</a><div id="snackbar">CLICK ON THE TEXT TO REDIRECT</div></button></li>
+                 <li><button class="btn" onclick="myFunction()"><a href="Qualification and interest.html" >Qualifications & Interests</a><div id="snackbar">CLICK ON THE TEXT TO REDIRECT</div></button></li>
+                 <!-- <li><button class="btn" onclick="myFunction()"><a href="index.html">Interests</a><div id="snackbar">Redirecting to requested Page</div></button></li> -->
+                 <li><button class="btn" onclick="myFunction()"><a href="projects.html" >Projects</a><div id="snackbar">CLICK ON THE TEXT TO REDIRECT</div></button></li>
+                 <li><button class="btn" onclick="myFunction()"><a href="Homepage.html" target="_blank">Assignment_Homepage</a><div id="snackbar">CLICK ON THE TEXT TO REDIRECT</div></button></li>
+             </ul>
+        
+     </div>   
+
+     <div class="banner">
+         <div class="app-text">
+            <H1>ROHAN SINGH</H1>
+             <div class="primary-btn">
+               <div class="btn-group">
+                 <div class="play-btn">
+                     <div class="play-btn-inner">
+                         <i class="fa fa-play"></i>
+                         <a href="#">Resume is Here</a>
+                     </div>
+                     
+                 </div>
+             </div>
+          </div>
+        </div>
+     </div>
+     <div class="social-icons">
+          <ul>
+            <li><a href="https://wa.me/8865063879" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+            <li><a href="https://twitter.com/RohanSi77294816?t=TLj_slXnwS9GAlTuDCu7bg&s=09" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://t.me/R15H1N"><i class="fa fa-telegram" ></i></a></li>
+          </ul>
+      
+        </div>
+    
+  </div>
+  </body>
+</html>
