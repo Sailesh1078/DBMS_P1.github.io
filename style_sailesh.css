@@ -40,9 +40,10 @@
     padding: 2rem;
   }
   #img{
-			width: 20%;
-			height: auto;
-		}
+	width: 10%;
+	height: auto;
+	allign: right;
+}
   section {
     margin-bottom: 2rem;
   }
