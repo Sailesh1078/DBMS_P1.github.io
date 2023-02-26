@@ -40,6 +40,7 @@
     padding: 2rem;
   }
   #img{
+	border: 1px solid #000;
 	width: 20%;
 	height: auto;
 	align: right;
